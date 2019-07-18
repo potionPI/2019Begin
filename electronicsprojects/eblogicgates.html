@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2019 Begin</title>
+  	<link rel="shortcut icon" href="../favicon.png">
+  	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  	<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+  	<script src="../myscripts.js"></script>
+  </head>
+  <div id="specialNav">
+		<p onclick="toggleSpecialNav()" id="specialNavBurger">&#9776;</p>
+		<a href="../aboutme.html"><p>About me</p></a>
+    <a href="../electronicsprojects.html"><p>Electronics Projects</p></a>
+		<a href="../codeprojects.html"><p>Code Projects</p></a>
+		<a href="../cadprojects.html"><p>CAD Projects</p></a>
+		<a href="../apparelprojects.html"><p>Apparel Projects</p></a>
+  </div>
+  <body>
+  	<div id="wrapper0">
+  		<div id="wrapper1">
+  			<h1 class="headerlogo"><a href="../index.html"><span class="logotext">201<span style="font-family: 'ZCOOL QingKe HuangYou', cursive;
+">9</span> Begin:</span></a> <span class="navburger" onclick="toggleSpecialNav()">&#9776;</span></h1>
+			<hr><br>
+			<p><a class="filep" href="index.html">Home</a> > <a class="filep" href="../electronicsprojects.html">Electronics Projects</a> > <a class="filep" href="eblogicgates.html">NPN Logic Gates (Winter 2018)</a></p>
+      <br><hr><br>
+			<h1 class="mainfilep">NPN Transistor Logic Gates</h1>
+      <div>
+        <ol class="plist">
+          <li><a href="#NOTgate">NOT</a></li>
+          <li><a href="#ANDgate">AND</a></li>
+          <li><a href="#ORgate">OR</a></li>
+          <li><a href="#NORgate">NOR</a></li>
+          <li><a href="#NANDgate">NAND</a></li>
+          <li><a href="#XORgate">XOR</a></li>
+          <li><a href="#XNORgate">XNOR</a></li>
+        </ol>
+      </div>
+      <br>
+      <div>
+      	<h3>Project Date: Winter 2018</h3>
+      	<p>Simulating Logic Gates with NPN transistors and LEDs</p>
+        <p>When I first learned about logic gates, for whatever reason, I thought it would be fun to make them with what I had on hand. After finding schematics on the internet and playing around with resistor values, here are the results!</p>
+        <p>&lt;<a href="https://drive.google.com/file/d/1TAP984kBdm9hnIcmOvjz8FrBBmbECabP/view?usp=sharing" target="_blank">Click here</a>&gt; for my notes</p>
+      </div>
+      <br>
+      <hr>
+      <h2 id="NOTgate">NOT Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/NOTgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/NOTgate_NPN_schematic.png"></div>
+      <div class="testvalueslist">
+      	<p>Vcc: +5 V</p>
+      	<p>R1: 4.7k Ω</p>
+      	<p>R2: 470 Ω</p>
+      	<p>R3: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+      	<li>4.7k Ω resistor x1</li>
+      	<li>470 Ω resistor x1</li>
+      	<li>220 Ω resistor x1</li>
+      	<li>2N2222 npn transistor x1</li>
+      	<li>white LED x1</li>
+      	<li>slide switch x1</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/XLDwO2QjF7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 id="ANDgate">AND Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/ANDgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/ANDgate_npn_schematic2.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 2.2k Ω</p>
+        <p>R2: 2.2k Ω</p>
+        <p>R3: 22k Ω</p>
+        <p>R4: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>2.2k Ω resistor x2</li>
+        <li>22k Ω resistor x1</li>
+        <li>220 Ω resistor x1</li>
+        <li>2N2222 npn transistor x2</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/eOOmGLpaHB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 id="ORgate">OR Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/ORgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/ORgate_npn_schematic.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 2.2k Ω</p>
+        <p>R2: 2.2k Ω</p>
+        <p>R3: 22k Ω</p>
+        <p>R4: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>2.2k Ω resistor x2</li>
+        <li>22k Ω resistor x1</li>
+        <li>220 Ω resistor x1</li>
+        <li>2N2222 npn transistor x2</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/AvokHS9hyD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 id="NORgate">NOR Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/NORgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/NORgate_npn_schematic.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 4.7k Ω</p>
+        <p>R2: 4.7k Ω</p>
+        <p>R3: 470k Ω</p>
+        <p>R4: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>4.7k Ω resistor x2</li>
+        <li>470k Ω resistor x1</li>
+        <li>220 Ω resistor x1</li>
+        <li>2N2222 npn transistor x2</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/NX9v2aKCtDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Unfortunately, I couldn't find the video I took using the schematic I drew above. Hence, the components I use in this video are slightly different.</p>
+      <hr>
+      <h2 id="NANDgate">NAND Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/NANDgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/ANDgate_npn_schematic2.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 4.7k Ω</p>
+        <p>R2: 4.7k Ω</p>
+        <p>R3: 470k Ω</p>
+        <p>R4: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>4.7k Ω resistor x2</li>
+        <li>470k Ω resistor x1</li>
+        <li>220 Ω resistor x1</li>
+        <li>2N2222 npn transistor x2</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/XTK2b7_Rp4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 id="XORgate">XOR Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/XORgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/XORgate_npn_schematic.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 4.7k Ω</p>
+        <p>R2: 470 Ω</p>
+        <p>R3: 4.7k Ω</p>
+        <p>R4: 470 Ω</p>
+        <p>R5: 1k Ω</p>
+        <p>R6: 1k Ω</p>
+        <p>R7: 1k Ω</p>
+        <p>R8: 1k Ω</p>
+        <p>R9: 470 Ω</p>
+        <p>R10: 470 Ω</p>
+        <p>R11: 470 Ω</p>
+        <p>R14: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>4.7k Ω resistor x2</li>
+        <li>470k Ω resistor x5</li>
+        <li>220 Ω resistor x1</li>
+        <li>1k Ω resistor x4</li>
+        <li>2N2222 npn transistor x8</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/5tx8Eo_Ajak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 id="XNORgate">XNOR Gate</h2>
+      <p>Symbol:</p>
+      <div class="imagetest"><img src="images/XNORgate_NPN.png"></div>
+      <p>Schematic:</p>
+      <div class="imagetest"><img src="images/XNORgate_npn_schematic.png"></div>
+      <div class="testvalueslist">
+        <p>Vcc: +5 V</p>
+        <p>R1: 4.7k Ω</p>
+        <p>R2: 470 Ω</p>
+        <p>R3: 4.7k Ω</p>
+        <p>R4: 470 Ω</p>
+        <p>R5: 1k Ω</p>
+        <p>R6: 1k Ω</p>
+        <p>R7: 1k Ω</p>
+        <p>R8: 1k Ω</p>
+        <p>R9: 470 Ω</p>
+        <p>R10: 470 Ω</p>
+        <p>R11: 470 Ω</p>
+        <p>R12: 1k Ω</p>
+        <p>R13: 220 Ω</p>
+        <p>R14: 220 Ω</p>
+      </div>
+      <p>Materials:</p>
+      <ul class="matlist">
+        <li>4.7k Ω resistor x2</li>
+        <li>470k Ω resistor x5</li>
+        <li>220 Ω resistor x2</li>
+        <li>1k Ω resistor x5</li>
+        <li>2N2222 npn transistor x8</li>
+        <li>white LED x1</li>
+        <li>slide switch x2</li>
+      </ul>
+      <p>Final Result:</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/36DWVMjBEbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<hr>
+			<div class="footer">
+				<p>Page last updated: July 2019</p>
+        <p class="aboutme">&lt;<a href="../aboutme.html">About me</a>&gt;</p>
+        <p class="aboutme">&lt;<a target="_blank" href="../resume.pdf">Resume</a>&gt;</p>
+			</div>
+  		</div>
+  	</div>
+  </body>
+</html>

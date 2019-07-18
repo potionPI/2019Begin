@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>2019 Begin</title>
+  	<link rel="shortcut icon" href="../favicon.png">
+  	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  	<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+  	<script src="../myscripts.js"></script>
+  </head>
+  <div id="specialNav">
+		<p onclick="toggleSpecialNav()" id="specialNavBurger">&#9776;</p>
+		<a href="../aboutme.html"><p>About me</p></a>
+    <a href="../electronicsprojects.html"><p>Electronics Projects</p></a>
+		<a href="../codeprojects.html"><p>Code Projects</p></a>
+		<a href="../cadprojects.html"><p>CAD Projects</p></a>
+		<a href="../apparelprojects.html"><p>Apparel Projects</p></a>
+  </div>
+  <body>
+  	<div id="wrapper0">
+  		<div id="wrapper1">
+  			<h1 class="headerlogo"><a href="../index.html"><span class="logotext">201<span style="font-family: 'ZCOOL QingKe HuangYou', cursive;
+">9</span> Begin:</span></a> <span class="navburger" onclick="toggleSpecialNav()">&#9776;</span></h1>
+			<hr><br>
+			<p><a class="filep" href="index.html">Home</a> > <a class="filep" href="../electronicsprojects.html">Electronics Projects</a> > <a class="filep" href="8by8matrix.html">LED Matrix (Winter 2018)</a></p>
+      <br><hr><br>
+			<h1 class="mainfilep">LED Matrix</h1>
+      <div>
+        <ol class="plist">
+          <li><a href="#schematic">Schematic</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#result">Result</a></li>
+        </ol>
+      </div>
+      <br>
+      <div>
+      	<h3>Project Date: Winter 2018</h3>
+      	<p>Making an LED matrix which lights up through multiplexing.</p>
+        <p>When I first learned soldering, I thought it would be fun to make a little matrix of LEDs. Here is the result!</p>
+        <!--
+        <p>&lt;<a href="downloads/NPNlogicgates.pdf" target="_blank">Click here</a>&gt; for my notes</p>
+        -->
+      </div>
+      <br>
+
+      <hr>
+      <h2 id="schematic">Schematic</h2>
+      <div class="imagetest"><a href="images/8by8matrix/8by8schematic.png" target="_blank"><img src="images/8by8matrix/8by8schematicblurry.png"></a></div>
+      <p>&lt;<a href="images/8by8matrix/8by8schematic.png" target="_blank">Click here</a>&gt; for full resolution image</p>
+      <p>All net names on the schematic are pins to the Arduino Uno</p>
+      <hr>
+
+      <h2 id="code">Code</h2>
+      <p>&lt;<a href="code/8by8matrix/matrixv2.ino" target="_blank">Click here</a>&gt; to view the Arduino Uno code</p>
+      <hr>
+      
+      <h2 id="result">Result</h2>
+      
+      <div>
+        <ol class="plist">
+          <li><a href="#v1">V1</a></li>
+          <li><a href="#v2">V2</a></li>
+          <li><a href="#v3">V3</a></li>
+        </ol>
+      </div>
+
+      <h3 id="v1">V1</h3>
+      <p class="smaller">Can scroll numbers through multiplexing. Unfortunately, the code I made for this was lost.</p>
+      <iframe class="center" width="500" height="900" src="https://www.youtube.com/embed/HZ6r39QbO0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h3 id="v2">V2</h3>
+      <p class="smaller">Control the movement of one LED with buttons. &lt;<a href="code/8by8matrix/matrixv2.ino" target="_blank">Arduino Code Here</a>&gt; </p>
+
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/HysWsNKtkDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p class="smaller">My original plan was to make a clock, but the Arduino Uno's own timer isn't great, and adding an rtc messes with the lighting. Hence now, it's a panel which does different things. With some more code work, it could be a game.</p>
+      <p class="smaller">The reason no ceramic caps were used to debounce is because for something like this, it is okay for the buttons to click a couple times, such as in 0:09 of the video.</p>
+      
+
+      <h3 id="v3">V3</h3>
+      <p class="smaller">The next step would be to make an enclosure for the matrix such that the matrix itself could still be programmed.</p>
+			<hr>
+
+
+			<div class="footer">
+        <p>Page last updated: July 2019</p>
+        <p class="aboutme">&lt;<a href="../aboutme.html">About me</a>&gt;</p>
+        <p class="aboutme">&lt;<a target="_blank" href="../resume.pdf">Resume</a>&gt;</p>
+			</div>
+  		</div>
+  	</div>
+  </body>
+</html>

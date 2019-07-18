@@ -1,0 +1,206 @@
+html {
+	font-family: 'PT Mono', monospace;
+	background-color: rgb(237, 239, 242);
+	margin: 0;
+}
+body {
+	margin: 0;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 38px;
+}
+h3 {
+	font-size: 32px;
+	text-decoration: underline;
+}
+p {
+	font-size: 28px;
+}
+#wrapper0 {
+	/*border: 18px dashed rgb(158, 163, 170);*/
+	width: 900px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#wrapper1 {
+	padding: 10px;
+}
+.headerlogo {
+	text-align: center;
+	font-size: 60px;
+}
+.headerlogo a {
+	text-decoration: none;
+	color: black;
+}
+.logotext:hover {
+	cursor: pointer;
+}
+.navburger:hover {
+	color: white;
+	cursor: pointer;
+	/*background-color: rgb(158, 163, 170);*/
+}
+#specialNav {
+	text-align: center;
+	position: fixed;
+	/*z-index: 100;*/
+	background-color: rgb(158, 163, 170);
+	width: 100%;
+	height: 100%;
+	display: none;
+	margin-top: -30px;
+	overflow: auto;
+	padding-bottom: 100px;
+}
+#specialNav a {
+	text-decoration: none;
+	color: white;
+}
+#specialNav a:hover {
+	color: black;
+}
+#specialNav p {
+	font-size: 32px;
+}
+p#specialNavBurger {
+	font-size: 60px;
+	color: white;
+}
+p#specialNavBurger:hover {
+	cursor: pointer;
+	color: black;
+}
+.intropara {
+	text-align: center;
+}
+#projectsbox {
+	text-align: center;
+}
+#projectsbox div {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	border: 3px solid black;
+	display: inline-block;
+	padding: 15px;
+}
+#projectsbox a {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 28px;
+}
+#projectsbox div:hover {
+	border: 3px solid black;
+	background-color: rgb(158, 163, 170);
+	color: rgb(237, 239, 242);
+	cursor: pointer;
+}
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.aboutme a:hover {
+	cursor: pointer;
+	color: white;
+}
+.aboutme a {
+	color: black;
+	text-decoration: none;
+}
+.filep {
+	color: black;
+	text-decoration: none;
+}
+.filep:hover {
+	color: rgb(158, 163, 170);
+	text-decoration: underline;
+}
+.mainfilep {
+	text-align: center;
+}
+.plist {
+	font-size: 32px;
+	text-align: center;
+}
+.plist a {
+	color: black;
+	text-decoration: none;
+}
+.plist a:hover {
+	color: white;
+}
+.plist li {
+	margin-top: 10px;
+	display: inline-block;
+	border: 2px solid black;
+	padding: 5px;
+}
+.plist li:hover {
+	border: 2px solid white;
+	background-color: rgb(158, 163, 170);
+	text-decoration: underline;
+	color: white;
+}
+.imagetest {
+	border: 10px solid black;
+	background-color: white;
+	width: 500px;
+	height: 300px;
+	margin: auto;
+}
+.imagetest2 {
+	border: 10px solid black;
+	background-color: white;
+	width: 500px;
+	margin: auto;
+}
+.imagetest2b {
+	border: 10px solid black;
+	background-color: black;
+	width: 500px;
+	margin: auto;
+}
+.imagetest640 {
+	border: 10px solid black;
+	background-color: white;
+	width: 640px;
+	margin: auto;
+}
+.imagetest100b {
+	border: 10px solid black;
+	background-color: black;
+	width: 100px;
+	margin:auto;
+}
+.center {
+	border: 10px solid black;
+	display: block;
+	margin: 0 auto;
+}
+.testvalueslist {
+	text-align: center;
+}
+.matlist {
+	font-size: 25px;
+	line-height: 1.8;
+}
+a:hover {
+	cursor: pointer;
+	color: white;
+}
+a {
+	color: black;
+	text-decoration: underline;
+}
+p {
+	line-height: 1.8;
+}
+p.smaller {
+	font-size: 23px;
+}

@@ -30,9 +30,10 @@
         <ol class="plist">
           <li><a href="#schematic">Schematic</a></li>
           <li><a href="#footprint">Footprint</a></li>
+          <li><a href="#zipfile">Zip File</a></li>
           <li><a href="#code">Code</a></li>
           <li><a href="#result">Result</a></li>
-          <!-- <li><a href="#tutorial">Tutorial</a></li> -->
+          <li><a href="#tutorial">Tutorial</a></li>
         </ol>
       </div>
       <br>
@@ -50,16 +51,22 @@
       <h2 id="schematic">Schematic</h2>
       <div class="imagetest2"><a href="images/keypadv1/12keyschematic.png" target="_blank"><img src="images/keypadv1/12keyschematicblurry.png"></a></div>
       <p>&lt;<a href="images/keypadv1/12keyschematic.png" target="_blank">Click here</a>&gt; for full resolution image</p>
-      <p>&lt;<a download href="images/keypadv1/12keyschematic.png" target="_blank">Click here</a>&gt; to download image</p>
+      <p>&lt;<a download href="otherfiles/keypadv1/keypadv3.sch" target="_blank">Click here</a>&gt; to download Eagle .sch file</p>
       <hr>
 
       <h2 id="footprint">Footprint</h2>
       <div class="imagetest2b"><a href="images/keypadv1/12keyfootprint.png" target="_blank"><img src="images/keypadv1/12keyfootprintblurry.png"></a></div>
       <p>&lt;<a href="images/keypadv1/12keyfootprint.png" target="_blank">Click here</a>&gt; for full resolution image</p>
+      <p>&lt;<a download href="otherfiles/keypadv1/keypadv3.brd" target="_blank">Click here</a>&gt; to download Eagle .brd file</p>
+      <hr>
+
+      
+      <h2 id="zipfile">Zip File</h2>
+      <p>&lt;<a download href="otherfiles/keypadv1/zip_for_JLCPCB.zip" target="_blank">Click here</a>&gt; to download zip file/gerbers for ordering the PCB</p>
       <hr>
 
       <h2 id="code">Code</h2>
-      <p>&lt;<a href="code/keypadv1/test12keys3.ino" target="_blank">Click here</a>&gt; to view the Arduino Uno code</p>
+      <p>&lt;<a download href="code/keypadv1/12keysv3.ino" target="_blank">Click here</a>&gt; to download the Arduino Uno code</p>
       <hr>
       
       <h2 id="result">Result</h2>
@@ -72,22 +79,125 @@
       </div>
 
       <h3 id="v1">V1</h3>
-      <p class="smaller">Press 1-12 or F1-F12. &lt;<a href="code/keypadv1/test12keys3.ino" target="_blank">Arduino Code Here</a>&gt; </p>
-
+      <p>In this first version, the LED light holes were too small and didn't get printed on the board. (That teaches me to never push the hole sizes again ^^;)</p>
       <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/M-YY5D6Xlh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <h3 id="v2">V2</h3>
-      <p class="smaller">The next step would be to make an enclosure for the keypad such that the keypad itself could still be programmed.</p>
+      <p>In this second version, the LED footprints were redone to fit the led lights better. (The schematic and footprint images above are all updated to this version.)</p>
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/RMtDVc1kviY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 			<hr>
-<!-- 
+
       <h2 id="tutorial">Tutorial</h2>
-      
-      <hr> -->
+        <p>Click te buttons below to access the various parts of the tutorial:</p>
+        <div class="buttonslist">
+        <button onclick="toggleEpisode1()">[Click me] Episode 1: <p class="small">Downloading Eagle (Student Edition) and Opening it Up</p></button>
+        <div id="ep1" style="display: none;">
+          <h3 style="text-align: center;">Downloading Eagle (Student Edition) and Opening it Up</h3>
+
+          <iframe margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/8l9EDaiS6Tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <!-- <p>Text guide:</p>
+          <ol>
+            <li>Go to Eagle Student Edition page on the Autodesk Eagle site: [<a href="https://www.autodesk.com/education/free-software/eagle" target="_blank">Click this link</a>]</li>
+            <li>Sign in or create an account on Eagle (you don't need to use your school account--any email will do)</li>
+            <li>After signing in or creating an account, go back to [<a href="https://www.autodesk.com/education/free-software/eagle" target="_blank">this link</a>]</li>
+            <li>Click "Download Eagle" for Windows, OSX, or linux depending on your operating system. (I use windows)</li>
+            <li>Run the .exe file with all default options</li>
+          </ol> -->
+
+        </div>
+
+        <br>
+
+       
+        <button onclick="toggleEpisode2()">[Click me] Episode 2: <p class="small">Setting Hotkeys, Importing a Library, and Placing Schematic Symbols</p></button>
+        <div id="ep2" style="display: none;">
+          <h3 style="text-align: center;">Setting Hotkeys, Importing a Library, and Placing Schematic Symbols</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/LApsW3xh-Hs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode3()">[Click me] Episode 3:<p class="small">Footprint, Pads, Drill</p></button>
+        <div id="ep3" style="display: none;">
+          <h3>Footprint, Pads, Drill</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/rsS0jCoplvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode4()">[Click me] Episode 4:<p class="small">Completing the Pushbutton Device</p></button>
+        <div id="ep4" style="display: none;">
+          <h3>Completing the Pushbutton Device</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/MGD7r-uZ5vU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+        <button onclick="toggleEpisode5()">[Click me] Episode 5:<p class="small">Creating a Device from Scratch</p></button>
+        <div id="ep5" style="display: none;">
+          <h3>Creating a Device from Scratch</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/re33RnkPkEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+        <button onclick="toggleEpisode6()">[Click me] Episode 6:<p class="small">Switch Device from Scratch and Introduction to Ground, Nets, and Name tags</p></button>
+        <div id="ep6" style="display: none;">
+          <h3>Switch Device from Scratch and Introduction to Ground, Nets, and Name tags</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/eUkidQKAG0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode7()">[Click me] Episode 7:<p class="small">Finishing Schematic and Starting Board Layout</p></button>
+        <div id="ep7" style="display: none;">
+          <h3>Finishing Schematic and Starting Board Layout</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/LaWdu7tZwok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode8()">[Click me] Episode 8:<p class="small">Moving and Editing Footprints, Planning, and Introduction to Eagle Board Coordinates</p></button>
+        <div id="ep8" style="display: none;">
+          <h3>Moving and Editing Footprints, Planning, and Introduction to Eagle Board Coordinates</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/CNfjXjvPxSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+        <button onclick="toggleEpisode9()">[Click me] Episode 9:<p class="small">Adding Silkscreen to Format Board</p></button>
+        <div id="ep9" style="display: none;">
+          <h3>Adding Silkscreen to Format Board</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/oZaZgV7ZpSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+
+        <button onclick="toggleEpisode10()">[Click me] Episode 10:<p class="small">Adding Custom Silkscreen Art</p></button>
+        <div id="ep10" style="display: none;">
+          <h3>Adding Custom Silkscreen Art</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/vmuqCDqZLo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode11()">[Click me] Episode 11:<p class="small">Routing a PCB with and without Polygon</p></button>
+        <div id="ep11" style="display: none;">
+          <h3>Routing a PCB with and without Polygon</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/wlQPj41JHng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <button onclick="toggleEpisode12()">[Click me] Episode 12:<p class="small">How to order Eagle board on JLCPCB</p></button>
+        <div id="ep12" style="display: none;">
+          <h3>How to order Eagle board on JLCPCB</h3>
+          <iframe style="margin-top: 20px; margin-bottom: 20px;" class="center" width="560" height="315" src="https://www.youtube.com/embed/-p54M2vOThg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr>
 
 
 			<div class="footer">
-				<p>Page last updated: July 2019</p>
+				<p>Page last updated: August 2019</p>
         <p class="aboutme">&lt;<a href="../aboutme.html">About me</a>&gt;</p>
         <p class="aboutme">&lt;<a target="_blank" href="../resume.pdf">Resume</a>&gt;</p>
 			</div>

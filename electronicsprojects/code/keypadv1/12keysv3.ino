@@ -1,4 +1,5 @@
 #include <Keyboard.h>
+#include <Mouse.h>
 
 #define PIN1  10
 #define PIN2  16
@@ -30,6 +31,8 @@ int readyRelease9 = 0;
 int readyRelease10 = 0;
 int readyRelease11 = 0;
 int readyRelease12 = 0;
+
+int randomNum = 0;
 
 void pressReleaseCheck() { // Keypads set 1 is currently numbers. Edit both Keyboard.press(es) and Keyboard.release(s) on pin to change what pressing on button does
   if (digitalRead(PIN1) == LOW) {
@@ -76,14 +79,32 @@ void pressReleaseCheck() { // Keypads set 1 is currently numbers. Edit both Keyb
     readyRelease10 = 1;
   }
   if (digitalRead(PIN11) == LOW) {
-    Keyboard.press(KEY_LEFT_CTRL);
-    Keyboard.press('c');
-    readyRelease11 = 1;
+    randomNum = random(1,3);
+    while(digitalRead(PIN11) == LOW) {
+      Mouse.click();
+      if (randomNum == 1) {
+        delay(random(100, 120));
+      } else if (randomNum == 1) {
+        delay(random(90, 110));
+      } else {
+        delay(random(80, 100));
+      }
+    }
+    Mouse.release();
+//    Keyboard.press(KEY_LEFT_CTRL);
+//    Keyboard.press(KEY_LEFT_GUI);
+//    Keyboard.press('c');
+//    readyRelease11 = 1;
   }
   if (digitalRead(PIN12) == LOW) {
-    Keyboard.press(KEY_LEFT_CTRL);
-    Keyboard.press('v');
-    readyRelease12 = 1;
+    while(digitalRead(PIN12) == LOW) {
+      Keyboard.press(32);
+    }
+    Keyboard.release(32);
+//    Keyboard.press(KEY_LEFT_CTRL);
+//    Keyboard.press(KEY_LEFT_GUI);
+//    Keyboard.press('v');
+//    readyRelease12 = 1;
   }
 
   ///
@@ -132,14 +153,16 @@ void pressReleaseCheck() { // Keypads set 1 is currently numbers. Edit both Keyb
      readyRelease10 = 0;
   }
   if (readyRelease11 && digitalRead(PIN11)) {
-    Keyboard.release(KEY_LEFT_CTRL);
-    Keyboard.release('c');
-    readyRelease11 = 0;
+//    Keyboard.release(KEY_LEFT_CTRL);
+//    Keyboard.release(KEY_LEFT_GUI);
+//    Keyboard.release('c');
+//    readyRelease11 = 0;
   }
   if (readyRelease12 && digitalRead(PIN12)) {
-    Keyboard.release(KEY_LEFT_CTRL);
-    Keyboard.release('v');
-    readyRelease12 = 0;
+//    Keyboard.release(KEY_LEFT_CTRL);
+//    Keyboard.release(KEY_LEFT_GUI);
+//    Keyboard.release('v');
+//    readyRelease12 = 0;
   }
 }
 
@@ -285,6 +308,8 @@ void setup() {
   pinMode(KEYBOARDOFFSWITCH, INPUT_PULLUP);
   
   Keyboard.begin();
+
+  Mouse.begin();
 }
 void loop() {
   if (digitalRead(SWITCH)) {
@@ -293,15 +318,22 @@ void loop() {
     pressReleaseCheck2(); // Keypads set 2
   }
   if (digitalRead(LEDSWITCH)) { // Switch LEDS on or off
-    digitalWrite(LEDOUT, HIGH);
-  } else {
     digitalWrite(LEDOUT, LOW);
+  } else {
+    digitalWrite(LEDOUT, HIGH);
   }
 
   if (digitalRead(KEYBOARDOFFSWITCH)) {
     Keyboard.releaseAll();
+    Mouse.release();
     Keyboard.end();
+    Mouse.end();
     while(digitalRead(KEYBOARDOFFSWITCH)) {
+      if (digitalRead(LEDSWITCH)) { // Switch LEDS on or off
+        digitalWrite(LEDOUT, LOW);
+      } else {
+        digitalWrite(LEDOUT, HIGH);
+      }
     }
     Keyboard.begin();
   }
